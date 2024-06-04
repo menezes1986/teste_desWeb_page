@@ -1,0 +1,36 @@
+/* Basic styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;  /* Adjust font family as desired */
+  }
+  
+  /* Header styles */
+  .header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f0f0f0;  /* Example background color */
+  }
+  
+  .heading {
+    font-size: 2rem;  /* Adjust heading size */
+    margin: 0;
+  }
+  
+  /* Navigation bar styles */
+  .nav-bar {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e0e0e0;  /* Example background color */
+  }
+  
+  .nav-bar a {
+    color: #000;  /* Adjust link color */
+    text-decoration: none;
+    padding: 0.5rem 1rem;  /* Adjust padding for links */
+  }
+  
+  .nav-bar a:hover {
+    background-color: #ddd;  /* Adjust hover color */
+  }
+  

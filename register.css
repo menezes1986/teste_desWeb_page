@@ -1,0 +1,57 @@
+body {
+    background-color: #f2f2f2; /* Light gray background */
+    font-family: sans-serif; /* Choose a preferred font family */
+  }
+  
+  h1 {
+    color: #663399; /* Deep purple heading */
+    text-align: center; /* Center align the heading */
+    margin-bottom: 20px; /* Add some space below the heading */
+  }
+  
+  form {
+    border: 1px solid #9966cc; /* Light purple border for the form */
+    border-radius: 5px; /* Rounded corners for the form */
+    padding: 20px; /* Add padding inside the form */
+    margin: 0 auto; /* Center the form horizontally */
+    max-width: 400px; /* Limit the form width */
+  }
+  
+  label {
+    color: #333333; /* Dark gray for labels */
+    display: block; /* Display labels on their own line */
+    margin-bottom: 5px; /* Add space below labels */
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add padding to input fields */
+    border: 1px solid #cccccc; /* Light gray border for inputs */
+    border-radius: 3px; /* Rounded corners for inputs */
+    margin-bottom: 15px; /* Add space below inputs */
+  }
+  
+  button[type="submit"] {
+    background-color: #9966cc; /* Light purple button background */
+    color: white; /* White text for the button */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px 20px; /* Add padding to the button */
+    cursor: pointer; /* Indicate clickable button */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #663399; /* Deep purple on hover */
+  }
+  
+  a {
+    color: #333333; /* Dark gray for link text */
+    text-decoration: none; /* Remove underline from link */
+  }
+  
+  a:hover {
+    color: #663399; /* Deep purple on hover */
+  }
+  

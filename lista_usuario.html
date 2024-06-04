@@ -1,0 +1,29 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Email</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody id="lista-usuario-container">
+        {% for row in rows %}
+        <tr>
+            <th scope="row">{{ row.ID }}</th>
+            <td>{{ row.nome }}</td>
+            <td>{{ row.email }}</td>
+            <td>
+                <a href="{{ url_for('usuario.formulario', id=row.ID) }}" class="btn btn-primary">Editar</a>
+                <form action="{{ url_for('usuario.delete', id=row.ID) }}" method="POST" style="display:inline;">
+                    <button type="submit" class="btn btn-danger">Deletar</button>
+                </form>
+                <button class="btn btn-info"
+                        c-get="{{ url_for('usuario.view', id=row.ID) }}"
+                        c-target="#exibir-usuario"
+                        data-bs-toggle="modal" data-bs-target="#exampleModal">Info</button>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>

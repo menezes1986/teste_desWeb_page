@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Preenchimento</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Formulario de Preenchimento</h1>
+    <form class="c-form" method="POST">
+        <div class="mb-3">
+            <label class="form-label">Nome:</label>
+            <input type="text" class="form-control" name="nome" value="{{ user.nome if user else '' }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email:</label>
+            <input type="text" class="form-control" name="email" value="{{ user.email if user else '' }}" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Senha:</label>
+            <input type="password" class="form-control" name="senha" value="{{ user.senha if user else '' }}" required>
+        </div>
+        <button type="submit" class="btn btn-warning">Salvar</button>
+    </form>
+</body>
+</html>
